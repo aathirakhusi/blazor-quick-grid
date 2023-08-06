@@ -3,11 +3,11 @@ Microsoft Visual Studio Solution File, Format Version 12.00
 # Visual Studio Version 17
 VisualStudioVersion = 17.6.33829.357
 MinimumVisualStudioVersion = 10.0.40219.1
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "BlazorQuickGrid.Server", "BlazorQuickGrid\Server\BlazorQuickGrid.Server.csproj", "{EE4F1132-AF19-4E17-A309-497BE74750F0}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "BlazorQuickGrid.Server", "BlazorQuickGrid\Server\BlazorQuickGrid.Server.csproj", "{EE4F1132-AF19-4E17-A309-497BE74750F0}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "BlazorQuickGrid.Client", "BlazorQuickGrid\Client\BlazorQuickGrid.Client.csproj", "{EA4923AC-E67C-4D51-8783-B0A8EB4FA9D5}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "BlazorQuickGrid.Client", "BlazorQuickGrid\Client\BlazorQuickGrid.Client.csproj", "{EA4923AC-E67C-4D51-8783-B0A8EB4FA9D5}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "BlazorQuickGrid.Shared", "BlazorQuickGrid\Shared\BlazorQuickGrid.Shared.csproj", "{835F2E87-248E-4010-A1B1-2E47D7F8180E}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "BlazorQuickGrid.Shared", "BlazorQuickGrid\Shared\BlazorQuickGrid.Shared.csproj", "{835F2E87-248E-4010-A1B1-2E47D7F8180E}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
