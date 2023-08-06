@@ -20,15 +20,28 @@ namespace BlazorQuickGrid.Server.Controllers
         }
 
         [HttpGet]
-        public IEnumerable<WeatherForecast> Get()
+        public IEnumerable<WeatherForecast> Get(bool sortByAscending, string column)
         {
-            return Enumerable.Range(1, 5).Select(index => new WeatherForecast
+            var result = Enumerable.Range(1, 5).Select(index => new WeatherForecast
             {
                 Date = DateOnly.FromDateTime(DateTime.Now.AddDays(index)),
                 TemperatureC = Random.Shared.Next(-20, 55),
                 Summary = Summaries[Random.Shared.Next(Summaries.Length)]
-            })
-            .ToArray();
+            });
+
+            if (column == "Date")
+            {
+                if (sortByAscending)
+                {
+                    result = result.OrderBy(x => x.Date);
+                }
+                else
+                {
+                    result = result.OrderByDescending(x => x.Date);
+                }
+            }
+
+            return result;
         }
     }
 }
